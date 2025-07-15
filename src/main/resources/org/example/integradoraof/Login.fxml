@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.almacenesmorelos.LoginController">
+    <children>
+        <VBox alignment="CENTER" layoutX="31.0" layoutY="30.0" prefHeight="310.0" prefWidth="319.0" spacing="10.0">
+         <ImageView fitHeight="108.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../../../img/Recurso%201.png" />
+            </image></ImageView>
+            <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Iniciar Sesión" />
+            <TextField fx:id="txtUsuario" promptText="Usuario" />
+            <PasswordField fx:id="txtContrasena" promptText="Contraseña" />
+            <Button onAction="#handleLogin" text="Entrar" />
+            <Label fx:id="lblMensaje" textFill="red" />
+        </VBox>
+    </children>
+</AnchorPane>
