@@ -25,7 +25,7 @@
                </Label>
                <Label layoutX="98.0" layoutY="67.0" text="Usuario" />
                <Label layoutX="98.0" layoutY="132.0" text="Contaraseña" />
-               <ImageView fitHeight="81.0" fitWidth="58.0" layoutX="14.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <ImageView fitHeight="81.0" fitWidth="58.0" layoutX="14.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
                   <image>
                      <Image url="@../../../../../img/user-Filled.png" />
                   </image>
