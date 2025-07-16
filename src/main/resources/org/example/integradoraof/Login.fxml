@@ -15,17 +15,17 @@
          </Pane>
          <AnchorPane maxWidth="242.0" minHeight="200.0" minWidth="300.0" prefHeight="246.0" prefWidth="242.0">
             <children>
-                  <TextField fx:id="txtUsuario" layoutX="63.0" layoutY="91.0" promptText="Usuario" />
-                  <PasswordField fx:id="txtContrasena" layoutX="63.0" layoutY="150.0" promptText="Contraseña" />
+                  <TextField fx:id="txtUsuario" layoutX="98.0" layoutY="91.0" promptText="Usuario" />
+                  <PasswordField fx:id="txtContrasena" layoutX="98.0" layoutY="150.0" promptText="Contraseña" />
                   <Button layoutX="161.0" layoutY="205.0" minHeight="20.0" minWidth="80.0" onAction="#handleLogin" style="-fx-background-color: #304850; -fx-background-radius: 10;" text="Entrar" textFill="WHITE" />
                <Label layoutX="82.0" layoutY="14.0" text="Bienbenido!">
                   <font>
                      <Font name="Comic Sans MS" size="24.0" />
                   </font>
                </Label>
-               <Label layoutX="62.0" layoutY="60.0" text="Usuario" />
-               <Label layoutX="65.0" layoutY="133.0" text="Contaraseña" />
-               <ImageView fitHeight="81.0" fitWidth="58.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <Label layoutX="98.0" layoutY="67.0" text="Usuario" />
+               <Label layoutX="98.0" layoutY="132.0" text="Contaraseña" />
+               <ImageView fitHeight="81.0" fitWidth="58.0" layoutX="14.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
                   <image>
                      <Image url="@../../../../../img/user-Filled.png" />
                   </image>
