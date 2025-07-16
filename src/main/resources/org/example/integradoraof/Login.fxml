@@ -3,19 +3,41 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.almacenesmorelos.LoginController">
+<AnchorPane maxHeight="600.0" maxWidth="600.0" minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #53798F;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.almacenesmorelos.LoginController">
     <children>
-        <VBox alignment="CENTER" layoutX="31.0" layoutY="30.0" prefHeight="310.0" prefWidth="319.0" spacing="10.0">
-         <ImageView fitHeight="108.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-               <Image url="@../../../../../img/Recurso%201.png" />
-            </image></ImageView>
-            <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Iniciar Sesión" />
-            <TextField fx:id="txtUsuario" promptText="Usuario" />
-            <PasswordField fx:id="txtContrasena" promptText="Contraseña" />
-            <Button onAction="#handleLogin" text="Entrar" />
+        <VBox alignment="CENTER" layoutX="89.0" layoutY="118.0" maxHeight="400.0" maxWidth="400.0" minHeight="322.0" minWidth="322.0" prefHeight="322.0" prefWidth="322.0" spacing="10.0" style="-fx-background-color: #FFFFFF;">
+         <Pane minHeight="6.0" minWidth="12.0" prefHeight="43.0" prefWidth="322.0" style="-fx-background-color: #304850;" VBox.vgrow="NEVER">
+            <children>
+                  <Label layoutX="113.0" layoutY="7.0" minWidth="-Infinity" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Iniciar Sesión" textAlignment="CENTER" textFill="WHITE" />
+            </children>
+         </Pane>
+         <AnchorPane maxWidth="242.0" minHeight="200.0" minWidth="300.0" prefHeight="246.0" prefWidth="242.0">
+            <children>
+                  <TextField fx:id="txtUsuario" layoutX="63.0" layoutY="91.0" promptText="Usuario" />
+                  <PasswordField fx:id="txtContrasena" layoutX="63.0" layoutY="150.0" promptText="Contraseña" />
+                  <Button layoutX="161.0" layoutY="205.0" minHeight="20.0" minWidth="80.0" onAction="#handleLogin" style="-fx-background-color: #304850; -fx-background-radius: 10;" text="Entrar" textFill="WHITE" />
+               <Label layoutX="82.0" layoutY="14.0" text="Bienbenido!">
+                  <font>
+                     <Font name="Comic Sans MS" size="24.0" />
+                  </font>
+               </Label>
+               <Label layoutX="62.0" layoutY="60.0" text="Usuario" />
+               <Label layoutX="65.0" layoutY="133.0" text="Contaraseña" />
+               <ImageView fitHeight="81.0" fitWidth="58.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../../../img/user-Filled.png" />
+                  </image>
+               </ImageView>
+            </children>
+         </AnchorPane>
             <Label fx:id="lblMensaje" textFill="red" />
         </VBox>
+      <ImageView fitHeight="66.0" fitWidth="68.0" layoutX="217.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../img/Recurso%201.png" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>
